@@ -29,7 +29,7 @@ export default class Header extends Component {
                       return(
                               <li key={item.name}>
                                 {/*<a href={item.url} target="_blank"><i className={item.className}></i></a>*/}
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/9NUMiHDbqAU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe title="Live Link" width="560" height="315" src="https://www.youtube.com/embed/9NUMiHDbqAU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                               </li>
                             )
                           }

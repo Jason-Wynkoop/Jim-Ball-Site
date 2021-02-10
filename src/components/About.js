@@ -24,7 +24,7 @@ export default class About extends Component {
             </div>
 
             <div>
-                      <iframe src="https://open.spotify.com/embed/playlist/2nlXItvhEXLN5lhjKHN2RH" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                      <iframe src="https://open.spotify.com/embed/playlist/2nlXItvhEXLN5lhjKHN2RH" title="Spotify" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
             </div>
          </div>

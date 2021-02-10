@@ -6,7 +6,7 @@ export default class About extends Component {
       <section id="about">
          <div className="row">
 
-            <div className="nine columns main-col">
+            <div>
 
                <h2>Who Jim Was:</h2>
                <p>
@@ -21,6 +21,11 @@ export default class About extends Component {
                  siteData.journey
                }
                </p>
+            </div>
+
+            <div>
+                      <iframe src="https://open.spotify.com/embed/playlist/2nlXItvhEXLN5lhjKHN2RH" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
             </div>
          </div>
       </section>

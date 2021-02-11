@@ -4,7 +4,7 @@ export default class About extends Component {
     let siteData = this.props.siteData;
     return (
       <section id="about">
-         <div className="row">
+         <div className="row banner">
 
             <div>
 
@@ -27,6 +27,7 @@ export default class About extends Component {
                       <iframe src="https://open.spotify.com/embed/playlist/2nlXItvhEXLN5lhjKHN2RH" title="Spotify" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
             </div>
+            
          </div>
       </section>
     );

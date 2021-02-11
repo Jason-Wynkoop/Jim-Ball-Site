@@ -22,10 +22,12 @@ export default class Header extends Component {
                <h1 className="responsive-headline">{siteData.name}</h1>
                <h3 style={{color:'#fff', fontFamily:'sans-serif '}}>{siteData.role}{siteData.description}
                </h3>
-               <div className="video-container">
-                                  <iframe title="Live Link" width="560" height="315" src="https://www.youtube.com/embed/9NUMiHDbqAU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
             </div>
+
+            <div className="video-container">
+              <iframe title="Live Link" width="560" height="315" src="https://www.youtube.com/embed/9NUMiHDbqAU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
          </div>
 
          <p className="scrolldown">
@@ -33,6 +35,8 @@ export default class Header extends Component {
          </p>
 
       </header>
+
+      
       </React.Fragment>
     );
   }

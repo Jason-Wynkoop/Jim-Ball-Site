@@ -11,7 +11,7 @@ class ContactUs extends Component {
     
   handleSubmit(e) {
       e.preventDefault()
-      const { name, email, subject, message } = this.state
+      const { email,  message } = this.state
 
       this.setState({
         buttonText: '...sending'

@@ -1,72 +1,44 @@
 import React, { Component } from 'react';
 import * as emailjs from 'emailjs-com'
 
-class ContactUs extends Component {
+export default function ContactUs() {
 
-    state = {
-      name: '',
-      email: '',
-      message: '',
-    }
-    
-  handleSubmit(e) {
-      e.preventDefault()
-      const { email,  message } = this.state
+  function sendEmail(e) {
+      e.preventDefault();
 
-      this.setState({
-        buttonText: '...sending'
-    })
-      let templateParams = {
-        from_name: email,
-        to_name: 'wynkjm01@gmail.com',
-        message_html: message,
-       }
-       emailjs.send(
-        'gmail',
-        'service_jzh71nl',
-         templateParams,
-        'user_PsddLqVIwqYmCBoNqfC3h'
-       )
-       this.resetForm()
-   }
+  emailjs.sendForm('service_jzh71nl', 'template_q3x63pq', e.target, 'user_PsddLqVIwqYmCBoNqfC3h')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  }
 
-   
-  resetForm() {
-      this.setState({
-        name: '',
-        email: '',
-        message: '',
-      })
-    }
-
-  handleChange = (param, e) => {
-      this.setState({ [param]: e.target.value })
-    }
-  
-
-  render() {
-      return(
+  return(
         <section id="contact">
           <div className="row section-head">
-        <form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
-        
-          <label class="message-name" htmlFor="message-name">Your Name</label>
-          <input onChange={e => this.setState({ name: e.target.value})} name="name" class="message-name" type="text" placeholder="Your Name" value={this.state.name}/>
-
-          <label class="message-email" htmlFor="message-email">Your Email</label>
-          <input onChange={(e) => this.setState({ email: e.target.value})} name="email" class="message-email" type="email" placeholder="your@email.com" required value={this.state.email} />
-
-          <label class="message" htmlFor="message-input">Your Message</label>
-          <textarea onChange={e => this.setState({ message: e.target.value})} name="message" class="message-input" type="text" placeholder="Please write your message here" value={this.state.message} required/>
-          
-          <div className="button--container">
-              <button type="submit" className="button button-primary">Submit</button>
-          </div>
-        </form>
+            
+          <form onSubmit={sendEmail}>
+                  <div className="row pt-5 mx-auto">
+                      <div className="col-8 form-group mx-auto">
+                          <input type="text" className="form-control" placeholder="Name" name="name"/>
+                      </div>
+                      <div className="col-8 form-group pt-2 mx-auto">
+                          <input type="email" className="form-control" placeholder="Email Address" name="email"/>
+                      </div>
+                      <div className="col-8 form-group pt-2 mx-auto">
+                          <input type="text" className="form-control" placeholder="Subject" name="subject"/>
+                      </div>
+                      <div className="col-8 form-group pt-2 mx-auto">
+                          <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message"></textarea>
+                      </div>
+                      <div className="col-8 pt-3 mx-auto">
+                          <input type="submit" className="btn btn-info" value="Send Message"></input>
+                      </div>
+                  </div>
+              </form>
         </div>
         </section>
-      );
-  }
+  )
 }
-
-export default ContactUs;

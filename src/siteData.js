@@ -58,8 +58,8 @@ let siteData = {
       
     "testimonials":[
       {
-        "description":"Moms testimonial",
-        "name":"Cherish"
+        "description":"My dad had a wonderful sense of humor with a contagious laugh.  He was always there when I needed to share news with him.  The love he had for his children, grandchildren, and great-granchildren was over the moon.  To say I will miss him is an understatement.  I know he would want me to remember the memories we made and to continue on to make new ones.",
+        "name":"Cherish Ball"
       },
       {
         "description":"Johnny testimonial",

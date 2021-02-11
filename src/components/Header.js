@@ -22,7 +22,7 @@ export default class Header extends Component {
                <h1 className="responsive-headline">{siteData.name}</h1>
                <h3 style={{color:'#fff', fontFamily:'sans-serif '}}>{siteData.role}{siteData.description}
                <div className="video-container">
-              <iframe title="Live Link"  src="https://www.youtube.com/embed/9NUMiHDbqAU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe title="Live Link"   src="https://www.youtube.com/embed/9NUMiHDbqAU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
                </h3>
             </div>

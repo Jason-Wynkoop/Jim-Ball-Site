@@ -19,7 +19,8 @@ export default function ContactUs() {
   return(
         <section id="contact">
           <div className="row section-head">
-            
+          <h2 style={{color:'white'}}>Please send your condolences here:</h2>
+
           <form className="form" onSubmit={sendEmail}>
                       <div className="col-8 form-group mx-auto">
                           <input type="text" className="form-control" placeholder="Name" name="name"/>

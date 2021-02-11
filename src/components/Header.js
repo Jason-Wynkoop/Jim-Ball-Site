@@ -22,20 +22,9 @@ export default class Header extends Component {
                <h1 className="responsive-headline">{siteData.name}</h1>
                <h3 style={{color:'#fff', fontFamily:'sans-serif '}}>{siteData.role}{siteData.description}
                </h3>
-               <hr/>
-               <ul className="youtube-link">
-                  {
-                    siteData.youtubelink && siteData.youtubelink.map(item =>{
-                      return(
-                              <li key={item.name}>
-                                {/*<a href={item.url} target="_blank"><i className={item.className}></i></a>*/}
-                                <iframe title="Live Link" width="560" height="315" src="https://www.youtube.com/embed/9NUMiHDbqAU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                              </li>
-                            )
-                          }
-                    )
-                  }
-               </ul>
+               <div className="video-container">
+                                  <iframe ctitle="Live Link" width="560" height="315" src="https://www.youtube.com/embed/9NUMiHDbqAU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
             </div>
          </div>
 

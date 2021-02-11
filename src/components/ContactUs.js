@@ -1,26 +1,72 @@
 import React, { Component } from 'react';
-export default class ContactUs extends Component {
+import * as emailjs from 'emailjs-com'
+
+class ContactUs extends Component {
+
+    state = {
+      name: '',
+      email: '',
+      message: '',
+    }
+    
+  handleSubmit(e) {
+      e.preventDefault()
+      const { name, email, subject, message } = this.state
+
+      this.setState({
+        buttonText: '...sending'
+    })
+      let templateParams = {
+        from_name: email,
+        to_name: 'wynkjm01@gmail.com',
+        message_html: message,
+       }
+       emailjs.send(
+        'gmail',
+        'service_jzh71nl',
+         templateParams,
+        'user_PsddLqVIwqYmCBoNqfC3h'
+       )
+       this.resetForm()
+   }
+
+   
+  resetForm() {
+      this.setState({
+        name: '',
+        email: '',
+        message: '',
+      })
+    }
+
+  handleChange = (param, e) => {
+      this.setState({ [param]: e.target.value })
+    }
+  
+
   render() {
-    let siteData = this.props.siteData;
-    return (
-      <section id="contact">
+      return(
+        <section id="contact">
           <div className="row section-head">
-            <div className="ten columns">
-              <p className="lead">
-              Please send a message to the family 
-              </p>
-            </div>
+        <form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
+        
+          <label class="message-name" htmlFor="message-name">Your Name</label>
+          <input onChange={e => this.setState({ name: e.target.value})} name="name" class="message-name" type="text" placeholder="Your Name" value={this.state.name}/>
+
+          <label class="message-email" htmlFor="message-email">Your Email</label>
+          <input onChange={(e) => this.setState({ email: e.target.value})} name="email" class="message-email" type="email" placeholder="your@email.com" required value={this.state.email} />
+
+          <label class="message" htmlFor="message-input">Your Message</label>
+          <textarea onChange={e => this.setState({ message: e.target.value})} name="message" class="message-input" type="text" placeholder="Please write your message here" value={this.state.message} required/>
+          
+          <div className="button--container">
+              <button type="submit" className="button button-primary">Submit</button>
           </div>
-          <div className="row">
-            <aside className="eigth columns footer-widgets">
-              <div className="widget">
-                <h4>Email: 
-                   {siteData.email}
-                </h4>
-              </div>
-            </aside>
-          </div>
+        </form>
+        </div>
         </section>
-        );
+      );
   }
 }
+
+export default ContactUs;

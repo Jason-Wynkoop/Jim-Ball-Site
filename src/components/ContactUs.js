@@ -1,6 +1,7 @@
 import React from 'react';
 import * as emailjs from 'emailjs-com'
 
+
 export default function ContactUs() {
 
   function sendEmail(e) {
@@ -19,8 +20,7 @@ export default function ContactUs() {
         <section id="contact">
           <div className="row section-head">
             
-          <form onSubmit={sendEmail}>
-                  <div className="row pt-5 mx-auto">
+          <form className="form" onSubmit={sendEmail}>
                       <div className="col-8 form-group mx-auto">
                           <input type="text" className="form-control" placeholder="Name" name="name"/>
                       </div>
@@ -36,7 +36,6 @@ export default function ContactUs() {
                       <div className="col-8 pt-3 mx-auto">
                           <input type="submit" className="btn btn-info" value="Send Message"></input>
                       </div>
-                  </div>
               </form>
         </div>
         </section>

@@ -4,7 +4,6 @@
 *   url: styleshout.com
 *   03-18-2014
 =====================================================================
-
    TOC:
    a. General Styles
    b. Header Styles
@@ -14,7 +13,6 @@
    g. Testimonials Section
    h. Contact Section
    i. Footer
-
 ===================================================================== */
 
 /* ------------------------------------------------------------------ */
@@ -623,7 +621,7 @@ call-to-action .button {
    padding: auto;
    color: #636363;
 }
-.responsive-headline { margin-bottom: 42px; }
+.responsive-headline { margin-bottom: 42px; padding-top: 20px; font-size: 0;}
 
 
 #contact a, #contact a:visited  { color: #11ABB0; }
@@ -817,4 +815,3 @@ footer .youtube-link-links li:first-child { margin-left: 0; }
  	border-radius: 100%;
 }
 #go-top a:hover { background-color: #0F9095; }
-

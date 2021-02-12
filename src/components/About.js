@@ -39,7 +39,7 @@ export default class About extends Component {
             </div>
          </div>
         <div className="column">
-            <img src="images/pictures/jim-looking.jpg"></img>
+            <img src="images/pictures/jim-looking.jpg" alt=""></img>
         </div>
       </section>
     );

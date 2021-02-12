@@ -27,7 +27,7 @@ export default class Header extends Component {
                 </h3>
                <div className="banner text">
                <div className="container">
-                  <iframe class="responsive-iframe"  src="https://www.youtube.com/embed/1jWCXJfxHQM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+                  <iframe title="Live link" class="responsive-iframe"  src="https://www.youtube.com/embed/1jWCXJfxHQM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
                </div>
                </div>
             </div>

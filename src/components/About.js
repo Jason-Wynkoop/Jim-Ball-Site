@@ -10,13 +10,7 @@ export default class About extends Component {
 
             <div className="column">
 
-               <h2>Who Jim Was:</h2>
-               <p>
-               {
-                 siteData.aboutme
-               }
-               </p>
-              <hr/>
+               
                <h2>His Journey</h2>
                <p>
                {
@@ -25,14 +19,24 @@ export default class About extends Component {
                </p>
                <hr/>
 
+               <h2>His Family</h2>
+               <p>
+               {
+                 siteData.family
+               }
+               </p>
+              <hr/>
+               
+               <h2>His Love For Music</h2>
+               <p>
+               {
+                 siteData.musicdes
+               }
+               </p>
+
             </div>
             </div>
             <div className ="row">
-            <div className="column">
-
-                <p>
-                </p>
-              </div>
               <div className="column">
               <iframe src="https://open.spotify.com/embed/playlist/2nlXItvhEXLN5lhjKHN2RH" title="Spotify" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
               </div>

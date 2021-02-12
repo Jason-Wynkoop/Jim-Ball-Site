@@ -11,8 +11,8 @@ let siteData = {
         }
       ],
     "aboutme":"This is where we describe the type of person he was. This is where we describe the type of person he was. This is where we describe the type of person he was. This is where we describe the type of person he was.",
-    "musicdes":"One of Jim's favorite things to do was jam to his favorite songs.  He would listen to everything from Juke Box Here by Foreigner to Stayin Alive by the Bee Gees.  Checkout some of his favorite songs in the Spotify playlist his family will remember him by.",
-    "picture":[
+    "musicdes":"Checkout some of his favorite songs in the Spotify playlist.",
+    "pictures":[
       {
         "name":"pic1",
         "description":"Family",
@@ -21,58 +21,69 @@ let siteData = {
       {
         "name":"pic2",
         "description":"Family",
-        "imgurl":"images/pictures/family-laugh.jpg"
+        "imgurl":"images/pictures/jim-ccandy.jpg"
       },
       {
         "name":"pic3",
         "description":"Family",
-        "imgurl":"images/pictures/family-laugh.jpg"
+        "imgurl":"images/pictures/jim-cherish-wedding.jpg"
       },
       {
         "name":"pic3",
         "description":"Family",
-        "imgurl":"images/pictures/family-laugh.jpg"
+        "imgurl":"images/pictures/jim-emilee-golf.jpg"
       },
       {
         "name":"pic3",
         "description":"Family",
-        "imgurl":"images/pictures/family-laugh.jpg"
+        "imgurl":"images/pictures/jim-grandkids.jpg"
       },
       {
         "name":"pic3",
         "description":"Family",
-        "imgurl":"images/pictures/family-laugh.jpg"
+        "imgurl":"images/pictures/jim-melissa.jpg"
       },
       {
         "name":"pic3",
         "description":"Family",
-        "imgurl":"images/pictures/family-laugh.jpg"
+        "imgurl":"images/pictures/jim-golf.jpg"
       },
       {
         "name":"pic3",
         "description":"Family",
-        "imgurl":"images/pictures/family-laugh.jpg"
+        "imgurl":"images/pictures/family-vava-jim.jpg"
+      },
+      {
+        "name":"pic3",
+        "description":"Family",
+        "imgurl":"images/pictures/jim-war.jpg"
+      },
+      {
+        "name":"pic3",
+        "description":"Family",
+        "imgurl":"images/pictures/jim-hayle.jpg"
+      },
+      {
+        "name":"pic3",
+        "description":"Family",
+        "imgurl":"images/pictures/jim-michelle.jpg"
       }
     ],
 
-    "journey": "Describe what he went through in life.Describe what he went through in life.Describe what he went through in life.Describe what he went through in life.Describe what he went through in life.Describe what he went through in life.",
-      
+    "journey": "Jim graduated from Muncie Central High School Class of 1966. He was drafted into the United States Army, Vietnam War. Jim was a recipient of the Purple Heart and two Bronze Stars, one with Valor.",
+    "family":"Jim is survived by his four children Cherish Swagger (Sam) of Goodyear, AZ, John Ball (Dani) of Prescott, AZ, Michelle Ball (Ernest) of Muncie and Melissa Greer (Nick) of Yorktown; seven grandchildren Justin (Jess), Brad, Jason (Kayla), Nikki, Emilee, Haylee and Kayden; six great-grandchildren Jacob, Kanen, Conner, Harrison, Sawyer, Everett James; two sisters Becky Nadji and Dixie Denny; several nieces and nephews also survive.",  
     "testimonials":[
       {
         "description":"My dad had a wonderful sense of humor with a contagious laugh.  He was always there when I needed to share news with him.  The love he had for his children, grandchildren, and great-granchildren was over the moon.  To say I will miss him is an understatement.  I know he would want me to remember the memories we made and to continue on to make new ones.",
         "name":"Cherish Ball"
       },
       {
-        "description":"Johnny testimonial",
-        "name":"Johnny"
+        "description":"My dad was a great man.  He was a hero in Vietnam where he saved lives.  He was a hero to his family.  He most of all was my hero and best friend.  Im going to miss my dad so much.  He was taken from us all too soon.",
+        "name":"John R Ball"
       },
       {
-        "description":"Johnny testimonial",
-        "name":"Johnny"
-      },
-      {
-        "description":"Johnny testimonial",
-        "name":"Johnny"
+        "description":"He had a smile that would make you smile from the inside out even on a bad day!",
+        "name":"Michelle Ball"
       }
     ]
   }

@@ -1,36 +1,32 @@
 import React, { Component } from 'react';
-export default class Porfolio extends Component {
+export default class Pictures extends Component {
   render() {
     let siteData = this.props.siteData;
     return (
       <section id="picture">
-      <div className="row">
-        <div className="twelve columns collapsed">
-          <h1>He brought love to everyone around him.</h1>
-          <div id="picture-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-          {
-            siteData.picture && siteData.picture.map((item)=>{
-              return(
-                <div className="columns picture-item">
-                  <div className="item-wrap">
-                    <a href="#modal-01">
-                      <img src={`${item.imgurl}`} className="item-img" alt="" />
-                      <div className="overlay">
-                        <div className="picture-item-meta">
-                          <p>{item.description}</p>
-                        </div>
-                      </div>
-                      
-                    </a>
-                  </div>
-                </div>
-              )
-            })
-          }
-          </div>
-        </div>
-      </div>
-  </section>
+        <div className="text-container">
+          <div className="row">
+            <div className="two columns header-col">
+              <h1><span>Memories</span></h1>
+            </div>
+            <div className="ten columns flex-container">
+              <div className="flexslider">
+                <ul className="slides">
+                  {
+                    siteData.pictures && siteData.pictures.map((item)=>{
+                      return(
+                        <li>
+                          <img src={item.imgurl}></img>
+                        </li>
+                      )
+                    })
+                  }
+                </ul>
+              </div> {/* div.flexslider ends */}
+            </div> {/* div.flex-container ends */}
+          </div> {/* row ends */}
+        </div>  {/* text-container ends */}
+      </section>
         );
   }
 }

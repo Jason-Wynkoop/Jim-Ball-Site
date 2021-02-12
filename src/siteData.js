@@ -1,7 +1,8 @@
 let siteData = {
     "name": "In Loving Memory of Jim Ball",
-    "email":" Maybe an email or whatever",
-    "description": "Jim was a loving father, grandfather, and great-grandfather...click the link below to join the live celebration of life",
+    "description": "If you would like to watch the live celebration of life please click the video below.",
+    "description2": "Click this link to view the obituary - ",
+    "obituarylink": "https://www.legacy.com/obituaries/thestarpress/obituary.aspx?n=james-r-ball&pid=197717863&fbclid=IwAR2JVz0qI3BlQPHOBDlE5aZ6IG2p1irEaM62B6crYieX23P_dFlbCa_RPaU",
     "youtubelink":[
         {
           "name":"youtubelink",
@@ -10,7 +11,7 @@ let siteData = {
         }
       ],
     "aboutme":"This is where we describe the type of person he was. This is where we describe the type of person he was. This is where we describe the type of person he was. This is where we describe the type of person he was.",
-
+    "musicdes":"One of Jim's favorite things to do was jam to his favorite songs.  He would listen to everything from Juke Box Here by Foreigner to Stayin Alive by the Bee Gees.  Checkout some of his favorite songs in the Spotify playlist his family will remember him by.",
     "picture":[
       {
         "name":"pic1",

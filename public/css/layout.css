@@ -32,11 +32,28 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/sky.jpg) no-repeat top center;
+   background: #161415 url(../images/main-bg.jpg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* vertically center banner section */
@@ -56,15 +73,15 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-   font: 30px/1.1em 'opensans-bold', sans-serif;
+   font: 50px/1.1em 'opensans-bold', sans-serif;
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
-   font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
+   font: 25px/1.9em 'librebaskerville-regular', serif;
+   color: #ffffff;
    margin: 0 auto;
    width: 70%;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
@@ -82,36 +99,14 @@ header .banner-text hr {
 
 /* header youtube-link links */
 
-.video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-header .youtube-link {
-   margin: 24px 0;
-   padding: 0;
-   font-size: 120px;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
-}
-header .youtube-link li {
-   display: inline-block;
-   margin: 0 15px;
-   padding: 0;
-}
+
 header .youtube-link li a { color: #fff; }
 header .youtube-link li a:hover { color: #11ABB0; }
 
 /* scrolldown link */
 header .scrolldown a {
    position: absolute;
+   padding-top: 10px;
    bottom: 30px;
    left: 50%;
    margin-left: -29px;
@@ -208,7 +203,22 @@ ul#nav li.current a { color: #F06000; }
 #about a, #about a:visited  { color: #fff; }
 #about a:hover, #about a:focus { color: #11ABB0; }
 
+#about img {
+   position: relative;
+   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+   filter: grayscale(100%);
+   width: "500";
+   height: "200";
+   padding-right: 30px;
+   padding-left: 30px;
+ }
 
+ #about iframe {
+
+ position: relative;
+
+ }
+ 
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
@@ -218,12 +228,9 @@ ul#nav li.current a { color: #F06000; }
 #about p {
    line-height: 30px;
    color: #7A7A7A;
+
 }
-#about .jim-pic {
-   position: relative;
-   width: 120px;
-   height: 120px;
-}
+
 
 #about .main-col { padding-right: 0%; }
 

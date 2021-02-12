@@ -19,17 +19,21 @@ export default class Header extends Component {
 
          <div className="row banner">
             <div className="banner-text">
-               <h1 className="responsive-headline">{siteData.name}</h1>
-               <h3 style={{color:'#fff', fontFamily:'sans-serif '}}>{siteData.role}{siteData.description}
-               <div className="video-container">
-              <iframe title="Live Link"   src="https://www.youtube.com/embed/9NUMiHDbqAU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+               <h1 >{siteData.name}</h1>
+               <h3>{siteData.description}
                </h3>
+               <h3 style={{color:'#fff', fontFamily:'sans-serif '}}>
+                 {siteData.description2}<a style={{color:'powderblue'}} href="https://www.legacy.com/obituaries/thestarpress/obituary.aspx?n=james-r-ball&pid=197717863&fbclid=IwAR2JVz0qI3BlQPHOBDlE5aZ6IG2p1irEaM62B6crYieX23P_dFlbCa_RPaU">Obituary</a>
+                </h3>
+               <div className="banner text">
+               <div className="container">
+                  <iframe class="responsive-iframe"  src="https://www.youtube.com/embed/1jWCXJfxHQM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+               </div>
+               </div>
             </div>
-
-
          </div>
 
+            
          <p className="scrolldown">
             <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
          </p>

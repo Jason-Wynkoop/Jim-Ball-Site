@@ -11,7 +11,7 @@ let siteData = {
         }
       ],
     "aboutme":"This is where we describe the type of person he was. This is where we describe the type of person he was. This is where we describe the type of person he was. This is where we describe the type of person he was.",
-    "musicdes":"Checkout some of his favorite songs in the Spotify playlist.",
+    "musicdes":"Checkout some of Jim's favorite songs in this Spotify playlist.",
     "pictures":[
       {
         "name":"pic1",
@@ -71,7 +71,7 @@ let siteData = {
     ],
 
     "journey": "Jim graduated from Muncie Central High School Class of 1966. He was drafted into the United States Army, Vietnam War. Jim was a recipient of the Purple Heart and two Bronze Stars, one with Valor.",
-    "family":"Jim is survived by his four children Cherish Swagger (Sam) of Goodyear, AZ, John Ball (Dani) of Prescott, AZ, Michelle Ball (Ernest) of Muncie and Melissa Greer (Nick) of Yorktown; seven grandchildren Justin (Jess), Brad, Jason (Kayla), Nikki, Emilee, Haylee and Kayden; six great-grandchildren Kanen, Conner, Harrison, Sawyer, Everett James; two sisters Becky Nadji and Dixie Denny; several nieces and nephews also survive.",  
+    "family":"Jim is survived by his four children Cherish Swagger (Sam) of Goodyear, AZ, John Ball (Dani) of Prescott, AZ, Michelle Ball (Ernest) of Muncie and Melissa Greer (Nick) of Yorktown; seven grandchildren Justin (Jess), Brad, Jason (Kayla), Nikki, Emilee, Haylee and Kayden; five great-grandchildren Kanen, Conner, Harrison, Sawyer, Everett James; two sisters Becky Nadji and Dixie Denny; several nieces and nephews also survive.",  
     "testimonials":[
       {
         "description":"My dad had a wonderful sense of humor with a contagious laugh.  He was always there when I needed to share news with him.  The love he had for his children, grandchildren, and great-granchildren was over the moon.  To say I will miss him is an understatement.  I know he would want me to remember the memories we made and to continue on to make new ones.",

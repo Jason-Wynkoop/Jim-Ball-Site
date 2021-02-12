@@ -16,7 +16,7 @@ export default class Pictures extends Component {
                     siteData.pictures && siteData.pictures.map((item)=>{
                       return(
                         <li>
-                          <img src={item.imgurl}></img>
+                          <img src={item.imgurl} alt=""></img>
                         </li>
                       )
                     })

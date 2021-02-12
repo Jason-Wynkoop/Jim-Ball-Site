@@ -18,13 +18,13 @@ export default class Header extends Component {
          </nav>
 
          <div className="row banner">
-            <div className="banner-text" >
-               <h1>{siteData.name}</h1>
-               <h3>{siteData.description}
+            <div className="banner-text">
+               <h1 className="responsive-headline">{siteData.name}</h1>
+               <h3 style={{color:'#fff', fontFamily:'sans-serif '}}>{siteData.description}
                </h3>
-               <h3 style={{color:'#fff', fontFamily:'sans-serif'} }>
+               <h3 style={{color:'#fff', fontFamily:'sans-serif '}}>
                  {siteData.description2}<a style={{color:'powderblue'}} href="https://www.legacy.com/obituaries/thestarpress/obituary.aspx?n=james-r-ball&pid=197717863&fbclid=IwAR2JVz0qI3BlQPHOBDlE5aZ6IG2p1irEaM62B6crYieX23P_dFlbCa_RPaU">Obituary</a>
-                 <p>Memorial Contributions may be made to First Tee Indiana in memory of James "Jim" Ball <a href="https://www.firstteeindiana.org/donate-2/" style={{color:'powderblue'}}>here</a>.</p>
+                 <p>Memorial Contributions may be made to First Tee Indiana in memory of James "Jim" Ball <a style={{color:'powderblue'}} href="https://www.firstteeindiana.org/donate-2/" >here</a>.</p>
 
                 </h3>
                <div className="banner text">

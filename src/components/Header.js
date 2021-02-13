@@ -25,12 +25,16 @@ export default class Header extends Component {
                <h3 style={{color:'#fff', fontFamily:'sans-serif '}}>
                  {siteData.description2}<a style={{color:'powderblue'}} href="https://www.legacy.com/obituaries/thestarpress/obituary.aspx?n=james-r-ball&pid=197717863&fbclid=IwAR2JVz0qI3BlQPHOBDlE5aZ6IG2p1irEaM62B6crYieX23P_dFlbCa_RPaU">Obituary</a>
                  <p>Memorial Contributions may be made to First Tee Indiana in memory of James "Jim" Ball <a style={{color:'powderblue'}} href="https://www.firstteeindiana.org/donate-2/" >here</a>.</p>
+                 <a href="https://purdue-edu.zoom.us/j/99089157164?pwd=R0VyMHh6QkZ2K3JySThRSzZnVHZ3Zz09">Zoom Invite Link</a>
                 </h3>
+         
                <div className="banner text">
                <div className="container">
                  {/*
-                  <iframe title="Live link" class="responsive-iframe"  src="https://www.youtube.com/embed/1jWCXJfxHQM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+                  <iframe title="Live link" class="responsive-iframe"  src="https://www.youtube.com/embed/1jWCXJfxHQM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                  */}
+                 
                </div>
                </div>
             </div>

@@ -67,6 +67,11 @@ let siteData = {
         "name":"pic3",
         "description":"Family",
         "imgurl":"images/pictures/jim-michelle.jpg"
+      },
+      {
+        "name":"pic3",
+        "description":"Family",
+        "imgurl":"images/pictures/sdfg.jpg"
       }
     ],
 
